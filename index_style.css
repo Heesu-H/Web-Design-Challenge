@@ -1,0 +1,44 @@
+#intro_para{
+    font-size: 20px;
+    color: rgb(73, 73, 73);
+    position:relative;
+    top: 50px;    
+}
+
+#intro_fig1_text{
+    text-align: center;
+}
+
+.thead{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media (max-width: 900px) {
+    #intro_fig1{
+        max-width: 100%;
+        height: auto;
+        position:relative;
+        margin-top: 10px;
+    }
+
+    #intro_fig1_text{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .intro{
+        font-size: 10px;
+        text-align: center;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #intro_para{
+        font-size: 15px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}

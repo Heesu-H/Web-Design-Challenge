@@ -2,44 +2,100 @@
 <html lang="en-gb">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Latitude</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="WebVisualizations/visualisation_page.html">Visualisations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="WebVisualizations/comparisons_page.html">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="WebVisualizations/table_page.html">Tables</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plots
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="#">Humidity</a></li>
+              <li><a class="dropdown-item" href="#">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="#">Wind Speed</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class = 'container'>
+    <div class = 'row'>
+      <div class = 'col-md-6 col-12'>
+        <p id='intro_para'>
+          This project provides a site to display the source data and scatter plots to compare lattitude to various features of weather such as max 
+          temperature, wind speed, cloudiness and humidity. To create these plots, data on 500 cities was pulled from the OpenWeatherMaps API into a jupyter notebook where 
+          relevant data was sorted into lists and then made into a dataframe through Pandas. Using the data from the newly made dataframe,
+          plots were created with Matplotlib in order to observe trends between latitude and aspects of weather, which will be explored on this site.
+        </p>
+      </div>
+      <div class = 'col-md-6 col-12'>
+        <figure>
+          <img id="intro_fig1" src="Resources/assets/images/Fig1.png" alt="Max temperature vs Latitude" >
+          <figcaption class='align-middle' id="intro_fig1_text" >Fig.1 - Maximum temperature vs Latitude</figcaption>
+        </figure> 
+      </div>
+    </div>
+  </div>
+
+  <div class = 'container-fluid'>
+    <div class = 'row'>
+      <div class = 'col-lg-4 col-12'>
+        <figure>
+          <img class ="intro fig2" src="Resources/assets/images/Fig2.png" alt="Max temperature vs Latitude" >
+          <figcaption class='align-middle' id="intro_fig1_text" >Fig.2 - Humidity vs Latitude</figcaption>
+        </figure> 
+      </div>
+      <div class = 'col-md-4 col-12'>
+        <figure>
+          <img class ="intro fig3" src="Resources/assets/images/Fig3.png" alt="Max temperature vs Latitude" >
+          <figcaption class='align-middle' id="intro_fig1_text" >Fig.3 - Cloudiness vs Latitude</figcaption>
+        </figure> 
+      </div>
+      <div class = 'col-md-4 col-12'>
+        <figure>
+          <img class ="intro fig4" src="Resources/assets/images/Fig4.png" alt="Max temperature vs Latitude" >
+          <figcaption class='align-middle' id="intro_fig1_text" >Fig.4 - Wind Speed vs Latitude</figcaption>
+        </figure> 
+      </div>
+    </div>
+  </div>
 
 
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
+
+
 
 
 </html>
