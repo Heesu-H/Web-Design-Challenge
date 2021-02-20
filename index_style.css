@@ -1,8 +1,10 @@
 #intro_para{
     font-size: 20px;
     color: rgb(73, 73, 73);
-    position:relative;
-    top: 50px;    
+    left:100; 
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 #intro_fig1_text{
@@ -14,31 +16,38 @@
     padding-right: 50px;
 }
 
+.fig_text{
+    margin-left: 95px;
+}
+
 @media (max-width: 900px) {
-    #intro_fig1{
-        max-width: 100%;
-        height: auto;
-        position:relative;
-        margin-top: 10px;
+    
+    .fig_text{
+        font-size: 12px;
+        margin-left: 45px;
     }
 
-    #intro_fig1_text{
-        font-size: 10px;
-        text-align: center;
-    }
-
-    .intro{
+    .intro_fig{
         font-size: 10px;
         text-align: center;
         max-width: 100%;
         height: auto;
+        margin-top: 40px
+    }
+
+    #fig_row{
+        padding-top: 10px;
     }
 
     #intro_para{
-        font-size: 15px;
-        padding-bottom: 30px;
+        position: relative;
+        font-size: 12px;
+        padding-top: 10;
         padding-left: 20px;
         padding-right: 20px;
     }
     
+    .intro_fig{
+        margin-top: 10px;
+    }
 }
