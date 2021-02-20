@@ -13,17 +13,20 @@
     padding-right: 100px;
 }
 
-#intro_fig1_text{
-    text-align: center;
-}
 
 .thead{
     padding-left: 50px;
     padding-right: 50px;
 }
 
+.intro_fig{
+    font-size: 10px;
+    text-align: center;
+    max-width: 90%;
+    height: auto;
+    }
 .fig_text{
-    margin-left: 95px;
+    margin-left: 30px;
 }
 
 @media (max-width: 900px) {

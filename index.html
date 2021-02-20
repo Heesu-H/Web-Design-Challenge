@@ -23,7 +23,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Plots
+              Visualisations
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Max Temperature</a></li>
@@ -31,9 +31,6 @@
               <li><a class="dropdown-item" href="#">Cloudiness</a></li>
               <li><a class="dropdown-item" href="#">Wind Speed</a></li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="WebVisualizations/visualisation_page.html">Visualisations</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="WebVisualizations/comparisons_page.html">Comparisons</a>
@@ -48,45 +45,80 @@
 
   <div class = 'container-fluid'>
     <div class = 'row' >
-      <div class = 'col-md-12 col-12'>
+      <div class = 'col-lg-6 col-md-12 col-12'>
         <p id='intro_para'>
           This project provides a site to display the source data and scatter plots to compare lattitude to various features of weather such as max 
           temperature, wind speed, cloudiness and humidity. To create these plots, data on 500 cities was pulled from the OpenWeatherMaps API into a jupyter notebook where 
           relevant data was sorted into lists and then made into a dataframe through Pandas. Using the data from the newly made dataframe,
           plots were created with Matplotlib in order to observe trends between latitude and aspects of weather, which will be explored on this site.
+       </p>
+        <p id='intro_para'>
+          Click on a figure for more information.
         </p>
       </div>
+
+      <div class='col'>
+        <div class='row'>
+          <div class = 'col-md-12 col-lg-6'>
+            <figure>
+              <img class="intro_fig fig1" src="Resources/assets/images/Fig1.png" alt="Max temperature vs Latitude" >
+              <figcaption class="fig_text" >Fig.1 - Maximum temperature vs Latitude</figcaption>
+            </figure> 
+          </div>
+          <div class = 'col-md-12 col-lg-6'>
+            <figure>
+              <img class ="intro_fig fig2" src="Resources/assets/images/Fig2.png" alt="Max temperature vs Latitude" >
+              <figcaption class="fig_text" >Fig.2 - Humidity vs Latitude</figcaption>
+            </figure> 
+          </div>
+        </div>
+        <div class = 'row'>
+          <div class = 'col-md-12 col-lg-6'>
+            <figure>
+              <img class ="intro_fig fig3" src="Resources/assets/images/Fig3.png" alt="Max temperature vs Latitude" >
+              <figcaption class="fig_text" >Fig.3 - Cloudiness vs Latitude</figcaption>
+            </figure> 
+          </div>
+          <div class = 'col-md-12 col-lg-6'>
+            <figure>
+              <img class ="intro_fig fig4" src="Resources/assets/images/Fig4.png" alt="Max temperature vs Latitude" >
+              <figcaption class="fig_text" >Fig.4 - Wind Speed vs Latitude</figcaption>
+            </figure> 
+          </div>
+        </div>
+    </div> 
+
     </div>
   </div>
 
-  <div class = 'container-fluid'>
+  <!-- <div class = 'container-fluid'>
     <div class = 'row' id='fig_row'>
-      <div class = 'col-mg-12 col-xl-6'>
+      <div class = 'col-sm-12 col-lg-6'>
         <figure>
           <img class="intro_fig fig1" src="Resources/assets/images/Fig1.png" alt="Max temperature vs Latitude" >
           <figcaption class="fig_text" >Fig.1 - Maximum temperature vs Latitude</figcaption>
         </figure> 
       </div>
-      <div class = 'col-mg-12 col-xl-6'>
+      <div class = 'col-sm-12 col-lg-6'>
         <figure>
           <img class ="intro_fig fig2" src="Resources/assets/images/Fig2.png" alt="Max temperature vs Latitude" >
           <figcaption class="fig_text" >Fig.2 - Humidity vs Latitude</figcaption>
         </figure> 
       </div>
-      <div class = 'col-mg-12 col-xl-6'>
+      <div class = 'col-sm-12 col-lg-6'>
         <figure>
           <img class ="intro_fig fig3" src="Resources/assets/images/Fig3.png" alt="Max temperature vs Latitude" >
           <figcaption class="fig_text" >Fig.3 - Cloudiness vs Latitude</figcaption>
         </figure> 
       </div>
-      <div class = 'col-mg-12 col-xl-6'>
+      <div class = 'col-sm-12 col-lg-6'>
         <figure>
           <img class ="intro_fig fig4" src="Resources/assets/images/Fig4.png" alt="Max temperature vs Latitude" >
           <figcaption class="fig_text" >Fig.4 - Wind Speed vs Latitude</figcaption>
         </figure> 
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 
