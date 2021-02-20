@@ -1,10 +1,16 @@
+#nav_buttons{
+    position:absolute;
+    right:0;
+    top:0;
+}
+
 #intro_para{
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(73, 73, 73);
     left:100; 
     padding-top: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #intro_fig1_text{
