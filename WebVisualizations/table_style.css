@@ -1,6 +1,10 @@
 #table_mods{
     position:relative;
-    margin-left: 5%;
+    margin-left:0;
+    border-style:none;
+    max-width: auto;
+    height: auto;
+    z-index: -10;
 }
 
 
@@ -9,3 +13,158 @@
     padding-right: 50px;
 }
 
+#nav_buttons{
+    font-weight: 500;
+    position:absolute;
+    right:25px;
+    top:25px;
+}
+
+#navbar_brand{
+    color:white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#nav_bar{
+    background-color:rgb(136, 169, 231);
+}
+
+thead{
+    color: thistle;
+    font-size:22px;
+}
+
+tbody td{
+    padding: 30px;
+  }
+  
+tbody tr:nth-child(odd){
+    background-color: thistle;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  li{
+    background:rgb(152, 171, 209);
+    font-weight: 500;
+
+  }
+
+
+  @media (max-width:900px)
+  {
+
+    #navbar_brand{
+        color:white;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    thead{
+        color: thistle;
+        font-size:5px;
+    }
+
+    tbody tr:nth-child(odd){
+        background-color: thistle;
+        color: #fff;
+        font-weight: 200;
+        font-size: 5px;
+      }
+
+      tbody tr:nth-child(even){
+        background-color:white;
+        color:  rgb(83, 74, 83);
+        font-weight: 200;
+        font-size: 5px;
+      }
+
+    .thead{
+        padding-left: 0px;
+        padding-right: 0px;
+    }  
+
+    tbody td{
+        padding: 15px;
+      }
+  }
+
+  @media (max-width:400px)
+  {
+
+    #navbar_brand{
+        color:white;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    thead{
+        color: thistle;
+        font-size:5px;
+    }
+
+    tbody tr:nth-child(odd){
+        background-color: thistle;
+        color: #fff;
+        font-weight: 200px;
+        font-size: 5px;
+      }
+
+      tbody tr:nth-child(even){
+        background-color:white;
+        color:  rgb(83, 74, 83);
+        font-weight: 200;
+        font-size: 5px;
+      }
+
+    .thead{
+        padding-left: 0px;
+        padding-right: 0px;
+    }  
+
+    tbody td{
+        padding: 12px;
+      }
+  }
+
+  
+/* 
+  @media (max-width:1200px)
+  {
+
+    #navbar_brand{
+        color:white;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    thead{
+        color: thistle;
+        font-size:20px;
+    }
+
+    tbody tr:nth-child(odd){
+        background-color: thistle;
+        color: #fff;
+        font-weight: 200;
+        font-size: 20px;
+      }
+
+      tbody tr:nth-child(even){
+        background-color:white;
+        color:  rgb(83, 74, 83);
+        font-weight: 200;
+        font-size: 20px;
+      }
+
+    .thead{
+        padding-left: 0px;
+        padding-right: 0px;
+    }  
+
+    tbody td{
+        padding: 15px;
+      }
+  } */

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="lat_cloudiness_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light" id = "nav_bar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html" id='navbar_brand'>Latitude</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" id="nav_buttons">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Visualisations
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="lat_maxtemp.html">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="lat_humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href="lat_cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="lat_windspeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons_page.html">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="table_page.html">Table</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class = 'container-fluid'>
+    <div class = 'row' id='fig_row'>
+      <div class = 'col-12 col-md-6'>
+        <a href="lat_cloudiness.html">
+          <figure>
+          <img class="intro_fig fig3" src="../Resources/assets/images/Fig3.png" alt="Max temperature vs Latitude" >
+          <figcaption class="fig_text" >Fig.3 - Cloudiness vs Latitude</figcaption>
+        </figure></a>
+      </div>
+      <div class='col-12 col-md-6'>
+        <p id='plot_desc'>
+          This scatter plot is displaying the relationship between the maximum temperature of a city and its latitude. 
+          For latitudes below zero, the temperature increases as we get closer to the equator where latitude equals zero. 
+          For latitudes above zero or once we move pass the equator and move north, the temperature decreases. We can say 
+          with confidence that there is a strong negative parabolic relationship between latitude and temperature.
+        </p>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-lg-4 '>
+        <a href="lat_maxtemp.html">
+        <figure>
+          <img class ="intro_fig fig1" src="../Resources/assets/images/Fig1.png">
+          <figcaption class="fig_text" >Fig.1 - Maximum temperature vs Latitude</figcaption>
+        </figure> </a>
+      </div>
+
+      <div class = 'col-lg-4 '>
+        <a href="lat_humidity.html">
+        <figure>
+          <img class ="intro_fig fig2" src="../Resources/assets/images/Fig2.png" >
+          <figcaption class="fig_text" >Fig.2 - Humidity vs Latitude</figcaption>
+        </figure> </a>
+      </div>
+      
+      <div class = 'col-lg-4'>
+        <a href="lat_windspeed.html">
+        <figure>
+          <img class ="intro_fig fig4" src="../Resources/assets/images/Fig4.png">
+          <figcaption class="fig_text" >Fig.4 - Wind Speed vs Latitude</figcaption>
+        </figure></a> 
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>

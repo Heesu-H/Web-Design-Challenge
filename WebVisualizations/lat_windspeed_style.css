@@ -1,0 +1,81 @@
+.intro_fig{
+    font-size: 10px;
+    text-align: center;
+    max-width: 90%;
+    height: auto;
+    }
+
+#plot_desc{
+    position:relative;
+    top:45px;
+    margin-right: 5cm;
+    font-size: 18px
+}
+
+.fig_text{
+    margin-left: 65px;
+    font-size: 20px;
+}
+
+#nav_buttons{
+    font-weight: 500;
+    position:absolute;
+    right:25px;
+    top:25px;
+}
+
+#navbar_brand{
+    color:white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#nav_bar{
+    background-color:rgb(136, 169, 231);
+}
+
+/* drop down color */
+li{
+    background:rgb(152, 171, 209);
+    font-weight: 500;
+
+  }
+
+@media (max-width:1122px) {
+    #plot_desc{
+        position:relative;
+        top:20px;
+        font-size: 15px;
+        margin-right: 1cm;
+    }
+
+}
+@media (max-width:900px) {
+
+    .fig_text{
+        margin-left: 20px;
+    }
+
+    #plot_desc{
+        position:relative;
+        top:20px;
+        font-size: 13px;
+        margin-right: 1cm;
+    }
+
+    .fig3{
+        max-width: 30%;
+    }
+    .fig1{
+        padding-top: 20px;
+        max-width: 30%;
+    }
+    .fig2{
+        
+        max-width: 30%;
+    }
+
+    .fig_text{
+        font-size: 10px;
+    }
+}
