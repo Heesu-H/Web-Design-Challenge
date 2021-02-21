@@ -9,8 +9,8 @@
 
 
 .thead{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left:50px;
+    padding-right:50px;
 }
 
 #nav_buttons{
@@ -32,11 +32,11 @@
 
 thead{
     color: thistle;
-    font-size:22px;
+    font-size:20px;
 }
 
 tbody td{
-    padding: 30px;
+    padding: 20px;
   }
   
 tbody tr:nth-child(odd){
